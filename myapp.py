@@ -1,4 +1,4 @@
-import myapp as st
+import streamlit as st
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeRegressor
@@ -8,7 +8,7 @@ import numpy as np
 # ---------- Load data ----------
 @st.cache_data
 def load_data():
-    df = pd.read_csv("admission.csv")   # use your CSV name here
+    df = pd.read_csv("admission.csv")   # your CSV name
     return df
 
 # ---------- Train model ----------
